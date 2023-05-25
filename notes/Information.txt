@@ -1,0 +1,10 @@
+GENERAL
+1. Node is a javascript runtime based on google's open source v8 engine.
+2. Introduced in 2009 by Ryan Duhl, by embeding v8 engine into a c++ program.
+3. Nodejs is single threaded, event driven and non-blocking. (light weight).
+4. Good for scalable large data intensive applications (good for streaming sites, real time chat applications).
+5. Always use even numbered LTS(long term support) version for devlopment and deployment.
+
+REPL
+1. stands for Read-Eval-Print-Loop.
+2. "_" is a special variable that stores the value of the previous expression.

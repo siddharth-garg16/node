@@ -20,4 +20,8 @@ WORKING WITH TERMINAL
 
 READING AND WRITING FILES (can be done synchronously and asynchronously by the help of "fs" module)
 Synhronously - using "readFileSync" and "writeFileSync" etc.
-Asynchronously - using 
+Asynchronously - using "readFile" and "writeFile" etc.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+ASYNCHRONOUS NATURE OF NODEJS

@@ -4,6 +4,7 @@ const http = require("http");//import http module for the server
 //step1 - create the server
 const server = http.createServer((request, response)=>{
     console.log("New request received");
+    response.end("Hello from the server");
     // console.log(request);
     // console.log(response);
 })//callback function will be called everytime a new request hits the server

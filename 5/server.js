@@ -7,13 +7,20 @@ let server = http.createServer((request, response)=>{
     console.log("New request received");
     let path = request.url;
     if(path==="/" || path.toLocaleLowerCase()==="/home"){
-        response.writeHead(200);
+        response.writeHead(200, {
+            'Content-Type':'text/html',
+            'Custom-Header':'Hello there!'
+        });
         response.end(html.replace('{{%CONTENT%}}', "Home"));
     } else if(path.toLocaleLowerCase()==="/about"){
-        response.writeHead(200);
+        response.writeHead(200, {
+            'Content-Type':'text/html'
+        });
         response.end(html.replace('{{%CONTENT%}}', "About"));
     } else if(path.toLocaleLowerCase()==="/contact"){
-        response.writeHead(200);
+        response.writeHead(200, {
+            'Content-Type':'text/html'
+        });
         response.end(html.replace('{{%CONTENT%}}', "Contact"));
     } else {
         response.writeHead(404);

@@ -30,4 +30,8 @@ ASYNCHRONOUS NATURE OF NODEJS
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-SIMPLE SERVER IN NODEJS
+SIMPLE SERVER PURELY IN NODEJS (No Express)
+1. Using http module, we can create a simple server instance using createServer() method of http and then call listen() method to start the server.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+

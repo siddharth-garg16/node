@@ -1,7 +1,7 @@
 GENERAL
 1. Node is a javascript runtime based on google's open source v8 engine.
 2. Introduced in 2009 by Ryan Duhl, by embeding v8 engine into a c++ program.
-3. Nodejs is single threaded, event driven and non-blocking. (light weight).
+#3. Nodejs is single threaded, event driven and non-blocking. (light weight).
 4. Good for scalable large data intensive applications (good for streaming sites, real time chat applications).
 5. Always use even numbered LTS(long term support) version for devlopment and deployment.
 
@@ -25,3 +25,9 @@ Asynchronously - using "readFile" and "writeFile" etc.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ASYNCHRONOUS NATURE OF NODEJS
+1. Nodejs is single threaded which means it has single main thread of execution. In synchronous APIs, it will wait for the execution of the time taking operation and hence block the main thread until that operation is done. After that only will it allow the execution of other statements.
+2. In asynchronous APIs, the main execution thread doesn't get blocked and it is processed in the background while the main execution thread executes the remaining statements. Those asynchronous APIs need a callback function that is executed once that operation is done(callback function doesn't always mean asynchronous and we must also avoid callback hell). (this how the implementation of Non-Blocking IO Model is done)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+SIMPLE SERVER IN NODEJS

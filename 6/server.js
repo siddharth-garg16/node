@@ -23,6 +23,9 @@ const server = http.createServer((request, response)=>{
         // response.end(data);
         
         //-----------------json into html
+        response.writeHead(200, {
+            'Content-Type':'text/html'
+        })
         response.end(listPage.join(','));
     } else {
         response.end("Error 404: Page not found");

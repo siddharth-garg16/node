@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"iPhone 14 Pro",
+        "price":119999
+    },
+    {
+        "id":2,
+        "name":"Galaxy S23 Ultra",
+        "price":99999
+    },
+    {
+        "id":3,
+        "name":"Pixel 7 Pro",
+        "price":87999
+    },
+    {
+        "id":4,
+        "name":"OnePlus 10 Pro",
+        "price":45999
+    }
+]

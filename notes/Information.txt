@@ -41,3 +41,14 @@ ROUTING AND ITS USE IN NODEJS
 (a)File based URL - where we specify the file name which we want to access and see in the browser.(localhost:3000/home.html)
 (b)Resource based URL - where we map a url pattern to a request handler. (localhost:3000/Home)
 3. Routes can also take route parameters (localhost:3000/Product/101) and query strings (localhost:3000/Books?author=john&id=101)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+MODULES IN NODEJS
+1. Every script file in nodejs is a module.
+2. Module is just a script file where we can export some values and then those value can be imported and used in other script files.
+3. Different types of Modules:
+(a)Built-in modules - These modules are available for use when you install Node.js (e.g. http, fs, os)
+(b)Local modules - you create local modules that you load and use in your program.
+(c)Third-party modules - external modules that we access using npm.
+

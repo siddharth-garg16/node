@@ -54,7 +54,7 @@ MODULES IN NODEJS
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-EVENT DRIVEN ARCHITECTURE IN NODEJS
+EVENT DRIVEN ARCHITECTURE IN NODEJS (also called observer pattern in JS)
 1.Event Emitter - emits named events when something important happens in the app (e.g. a request hitting the server etc.)
 2.Event Listener - emitted event is picked up by listener and then call a callback function assigned to be called after the event is picked
 3.Event Handler - that assigned callback function is called event handler

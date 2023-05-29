@@ -22,7 +22,6 @@ const server = http.createServer((request, response)=>{
         // })
         // response.end(data);
         
-        //-----------------json into html
         response.writeHead(200, {
             'Content-Type':'text/html'
         })

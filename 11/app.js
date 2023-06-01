@@ -14,3 +14,4 @@ server.on("request", (req, res)=>{
 
     rs.pipe(res); //pass a writable stream in pipe (res in this case)
 })
+//pipe can be used on a readable stream only

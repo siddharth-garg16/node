@@ -38,3 +38,4 @@ server.on('request', (req, res)=>{
         res.end();
     })
 })
+//potential issue is if readable stream is faster than writable stream (fixed by pipe)

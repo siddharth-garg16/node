@@ -69,3 +69,19 @@ STREAMS IN NODEJS
 (b)Writable Stream - The writable streams are the one to which we can write data chunk by chunk. Opposite of readable stream. (e.g. response stream, write file stream etc.). Important writable stream events - drain & finish. Important writable stream methods - write and end.
 (c)Duplex Stream - Duplex stream is simply a stream that is both readable and writable at the same time. (e.g. web sockets).
 (d)Transform Stream - Transform streams are duplex streams which can also modify or transform data as it is read or written. (e.g. zlib - used for compression).
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+NPM (Node Package Manager) is a package manager for the Node JavaScript platform. It consists of an npm registry that enables Open-Source developers to publish and share their code.
+1.Package repository for the JS based packages.
+2.also a CLI for managing the packages.
+3.npm init creates a package.json file for us with infromation about the project and its dependencies.
+3.Types of packages based on dependencies:
+(a)Production Dependencies - Production dependencies are fundamental dependencies that are required to complete the project. Package.json specifies these dependencies under the key “dependencies”. These are the packages used in the project code.
+(b)Development Dependencies - The packages required by a developer during development are called devDependencies. Dependencies that you might need at some point in the development process, but not during execution. They are not included in the production version and will not be downloaded to end user’s browser caches. For example, Nodemon, lodash, Babel etc.
+(c)Peer Dependencies - The only time you would encounter peer dependencies is if you were publishing your own package ie, when you develop a code that will be used by other programs. Libraries use peerDependencies to tell developers which other libraries with the exact version they will need to install in their own websites to use your library. Therefore, peer dependencies also express compatibility. The peerDependencies ensure that the code is compatible with the version of the package installed. peerDependencies are not automatically installed. You need to manually modify your package.json file in order to add a Peer Dependency.
+(d)Optional Dependencies - As the name implies, optional dependencies are those that won’t cause a failure during the installation of the dependencies for an application or project because npm will ignore them if they fail. Regardless of whether these dependencies are present or not, the application will still run just fine. Adding a dependency as optional can speed up the installation process for Node projects.
+(e)Bundled Dependencies - When publishing the package, these dependencies are bundled with it. NPM packages are preserved locally or can be downloaded from a single file. For example, express, request packages can be bundled. BundledDependencies are listed as an array, without versions. Bundled Dependencies have the same functionality as normal dependencies. When normal dependencies are insufficient, bundled dependencies can be useful. They are rarely used. 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+

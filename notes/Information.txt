@@ -58,3 +58,14 @@ EVENT DRIVEN ARCHITECTURE IN NODEJS (also called observer pattern in JS)
 1.Event Emitter - emits named events when something important happens in the app (e.g. a request hitting the server etc.)
 2.Event Listener - emitted event is picked up by listener and then call a callback function assigned to be called after the event is picked
 3.Event Handler - that assigned callback function is called event handler
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+STREAMS IN NODEJS
+1.Streams are objects that let you read data from a source or write data to a destination in continuous fashion. (great for handling large volume of data)
+2.Streams are intances of event emitter class i.e. they can listen to named events.
+3.Types of streams in Nodejs:
+(a)Readable Stream - The readable streams are the one from where we can read or consume data chunk by chunk. (e.g. Request stream, read file stream etc.). Important readable stream events - data & read. Important readable stream methods - read and pipe.
+(b)Writable Stream - The writable streams are the one to which we can write data chunk by chunk. Opposite of readable stream. (e.g. response stream, write file stream etc.). Important writable stream events - drain & finish. Important writable stream methods - write and end.
+(c)Duplex Stream - Duplex stream is simply a stream that is both readable and writable at the same time. (e.g. web sockets).
+(d)Transform Stream - Transform streams are duplex streams which can also modify or transform data as it is read or written. (e.g. zlib - used for compression).

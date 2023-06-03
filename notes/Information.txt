@@ -85,3 +85,14 @@ NPM (Node Package Manager) is a package manager for the Node JavaScript platform
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+ARCHITECTURE OF NODEJS
+1.Based on the combination of V8 engine and LIBUV library.
+2.V8(JS & C++) - responsible for executing the JS code (JS code into machine code) that we write in the backend application.
+3.LIBUV(C & C++) - open source library that deals with asynchronous I/O.(allows access to file systems, network systems, os etc.) Responsible for two of the most important features of Nodejs i.e. Event Loop and Thread Pool.
+4.Event Loop - responsible for executing simpler tasks like callbacks and network io.
+5.Pool Thread - responsible for heavy tasks like file access, compression etc.
+6.Process - just a program which is currently executing.
+7.Thread - responsible for executing program code in a process. Each process has a main thread.
+8.Asynchronous tasks are pushed to the thread pool so the main thread doesn't get blocked. when that asynchronous task is completed the callback functions attached to that asynchronous task is moved to the event loop and which is then executed by main thread.
+
+----------------------------------------------------------------------------------------------------------------------------------------
